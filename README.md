@@ -65,7 +65,7 @@ class AgentState(TypedDict):
 LangGraph는 에이전트 실행 흐름을 **방향성 그래프(DAG)** 로 표현합니다.  
 각 노드(Node)는 에이전트 함수이며, 엣지(Edge)는 실행 순서를 나타냅니다.
 
-![graph_structure](./graph_structure.png)
+<img width="145" height="432" alt="output" src="https://github.com/user-attachments/assets/ed7bf518-c9e2-4c14-b6af-133bb5b9c514" />
 
 - **`__start__`** : 그래프 진입점 — 사용자 질문 입력
 - **`extractor`** : 증상 추출 노드
@@ -81,11 +81,11 @@ LangGraph는 에이전트 실행 흐름을 **방향성 그래프(DAG)** 로 표�
 
 질문 `"체력이 안 좋고, 살이 계속 찌는데 어떤 운동을 할까?"` 를 입력했을 때의 출력 결과입니다.
 
-![result_output](./result_output.png)
+<img width="960" height="545" alt="스크린샷 2026-05-13 오후 3 56 38" src="https://github.com/user-attachments/assets/0d254678-f0f5-41fe-8d51-6ca7ddeb6680" />
 
 - **[1] 추출된 증상** : extractor 에이전트가 질문에서 핵심 증상을 분리
 - **[2] 추천 운동 목록** : recommender 에이전트가 증상에 맞는 운동 선별
-- **[3] 최종 답변 (개조식)** : answer 에이전트가 운동별 추천 이유·방법을 구조화 출력
+- **[3] 최종 답변 ** : answer 에이전트가 운동별 추천 이유·방법을 구조화 출력
 
 ---
 
