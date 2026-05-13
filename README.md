@@ -110,7 +110,7 @@ ollama pull exaone3.5:2.4b
 ### 3. 노트북 실행
 
 ```bash
-jupyter notebook langgraph_exercise.ipynb
+jupyter notebook LangGraph_Agent_Orchestrator.ipynb
 ```
 
 ---
